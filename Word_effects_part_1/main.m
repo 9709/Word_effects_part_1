@@ -52,7 +52,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Whao, calm down!");
     }
     
-        
+    // replace all spaces with "-"
+    if ([inputString containsString:@" "]) {
+        NSString *replaced = [inputString stringByReplacingOccurrencesOfString:@" "
+                                                                    withString:@"-"];
+        NSLog(@"%@", replaced);
+    }
         
     }
 }
