@@ -26,8 +26,7 @@ int main(int argc, const char * argv[]) {
     
     // print NSString object
     NSLog(@"Input was: %@", inputString);
-        
-        //this is a comment
+        NSLog(@"%p", inputString);
     }
     
 }
