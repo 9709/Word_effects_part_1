@@ -66,8 +66,8 @@ int main(int argc, const char * argv[]) {
             break;
             
             case 3:
-            // numberize - does not work if you input "0"
-            if (numberized != 0) {
+            // numberize - does not work if you input "00"
+            if (numberized != 0 || [inputString  isEqual: @"0\n"]) {
             NSLog(@"Numberized: %i", numberized);
             } else {
             NSLog(@"This is not a number! :(");
