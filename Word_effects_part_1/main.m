@@ -27,6 +27,32 @@ int main(int argc, const char * argv[]) {
     // print NSString object
     NSLog(@"Input was: %@", inputString);
         NSLog(@"%p", inputString);
+        
+    // print in UPPERCASE
+    NSString *uppercase = [inputString uppercaseString];
+        NSLog(@"%@", uppercase);
+    
+    // print in lowercase
+    NSString *lowercase = [inputString lowercaseString];
+        NSLog(@"%@", lowercase);
+         
+    // numberize
+    int numberized = [inputString intValue];
+        NSLog(@"Numberized: %i", numberized);
+    
+    // canadianize
+    NSString *string2 = @", eh";
+    NSString *appended = [inputString stringByAppendingString:string2];
+        NSLog(@"%@", appended);
+        
+    // respond
+    if ([inputString containsString:@"?"]) {
+        NSLog(@"I don't know");
+    } else if ([inputString containsString:@"!"]) {
+        NSLog(@"Whao, calm down!");
     }
     
+        
+        
+    }
 }
